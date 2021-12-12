@@ -52,7 +52,7 @@ parser.add_argument(
 parser.add_argument(
     "-k",
     "--keyword_search",
-    help="Does the filter_file contain keywords (or regex) expected in sequence headers within input fastq files ?",
+    help="filter_file contains keywords (as regex) to filter input fastq file(s)?",
     action="store_true",
 )
 parser.add_argument(

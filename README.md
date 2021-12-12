@@ -30,6 +30,8 @@ optional arguments:
   -f FILTER_FILE, --filter_file FILTER_FILE
                         File containing strings to include based on IDs in
                         fastq
+  -k, --keyword_search  filter_file contains keywords (as regex) to filter 
+                        input fastq file(s)?
   -v, --invert          Invert match (exclude matching entries)
   --gzip                gzip compress the output
 ```
@@ -39,9 +41,18 @@ Currently this only works on FASTQ files (https://en.wikipedia.org/wiki/FASTQ_fo
 
 gzip'd input is accepted and automatically detected.
 
-The identifier list should be a newline-separated list of each identifier to match against. For example: 
+The filter_file should be a newline-separated list of each identifier to match against
 
 ```
 @K00188:86:H3NM2BBXX:4:1101:1316:1103
 @K00188:86:H3NM2BBXX:4:1101:3934:1103
+```
+
+or if `-k/--keyword_search` is used,
+
+```
+kraken:taxid\|9606$
+H3NM2BBXX
+1101:3934
+[@]?A00579
 ```
