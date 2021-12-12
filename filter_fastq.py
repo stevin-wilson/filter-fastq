@@ -10,6 +10,7 @@
 #
 # (2021-12-11)
 # 1. Modified script at https://github.com/Floor-Lab/filter-fastq to provide keywords (in regex format) to filter fastq sequences.
+# 2. Tweaks to speed up the process.
 
 import sys
 import argparse
