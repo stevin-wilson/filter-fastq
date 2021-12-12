@@ -52,7 +52,7 @@ parser.add_argument(
 parser.add_argument(
     "-k",
     "--keyword_search",
-    help="filter_file contains keywords (as regex) to filter input fastq file(s)?",
+    help="FILTER_FILE contains keywords (as regex) to filter input fastq file(s)",
     action="store_true",
 )
 parser.add_argument(

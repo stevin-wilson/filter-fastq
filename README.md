@@ -30,7 +30,7 @@ optional arguments:
   -f FILTER_FILE, --filter_file FILTER_FILE
                         File containing strings to include based on IDs in
                         fastq
-  -k, --keyword_search  filter_file contains keywords (as regex) to filter 
+  -k, --keyword_search  FILTER_FILE contains keywords (as regex) to filter 
                         input fastq file(s)
   -v, --invert          Invert match (exclude matching entries)
   --gzip                gzip compress the output
