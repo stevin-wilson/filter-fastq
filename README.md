@@ -9,7 +9,7 @@ This is almost certainly not the most efficient way to implement this filtering 
 
 ```
 usage: filter_fastq.py [-h] [-i INPUT] [-1 READ1] [-2 READ2] [-p NUM_THREADS]
-                       [-o OUTPUT] [-f FILTER_FILE] [-v] [--gzip]
+                       [-o OUTPUT] [-f FILTER_FILE] [-k] [-v] [--gzip]
 
 Filter fastq file
 
